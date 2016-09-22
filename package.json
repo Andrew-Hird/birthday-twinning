@@ -1,0 +1,32 @@
+{
+  "name": "birthday-twinning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-Hird/birthday-twinning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrew-Hird/birthday-twinning/issues"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "homepage": "https://github.com/Andrew-Hird/birthday-twinning#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "handlebars": "^4.0.5",
+    "handlebars-loader": "^1.4.0",
+    "superagent": "^2.3.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}

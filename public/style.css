@@ -6,6 +6,10 @@ body {
   font-family: raleway;
 }
 
+em {
+  font-size: 0.75em;
+}
+
 #mainContent {
   width: 1080px;
   margin: 0px auto;

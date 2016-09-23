@@ -1,13 +1,15 @@
 import request from 'superagent'
-import imageTemplate from '../views/result.hbs'
-import formTemplate from '../views/index.hbs'
+import indexTemplate from '../views/index.hbs'
+import loadingTemplate from '../views/loading.hbs'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const div = document.createElement('div')
-  div.innerHTML = formTemplate({})
-  document.body.appendChild(div)
+  const resultDiv = document.getElementById('result')
+  resultDiv.innerHTML = indexTemplate()
 
   document.getElementById("submit").addEventListener("click", () => {
+    const loadingDiv = document.getElementById('loading')
+    loadingDiv.innerHTML = loadingTemplate({loading: true})
+
     let day = document.getElementById('day_id').value
     console.log(day)
 
@@ -23,11 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
       .set('X-Mashape-Key', 'K8PePus3J5mshL1PGPWADznQPwpcp1DrIJ1jsniD7KHEtKWsUT')
       .end((err, res) => {
         if(!err) {
-          html = JSON.parse(res.text).data[0].age
-          console.log(JSON.parse(res.text).data)
+          const result = JSON.parse(res.text).data
+          console.log(result)
+          const resultDiv = document.getElementById('result')
+          resultDiv.innerHTML = indexTemplate({result: result})
         }
-          document.getElementById('result').innerHTML = html
+
       })
   })
-
 })

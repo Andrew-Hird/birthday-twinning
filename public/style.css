@@ -1,0 +1,113 @@
+body {
+  background-color: MediumPurple;
+  color: white;
+  text-shadow: 1px 1px 3px cyan;
+  font-size: 2em;
+  font-family: raleway;
+}
+
+#mainContent {
+  width: 1080px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#submit {
+  width: 100px;
+  height: auto;
+
+  font-size: 2em;
+}
+
+
+#day_id {
+  width: 150px;
+  height: auto;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  background: #f8f8f8;
+  color:#888;
+  border:none;
+  outline:none;
+  display: inline-block;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+}
+
+#month_id {
+  text-align: center;
+  padding:3px;
+  height: auto;
+  width: 300px;
+  font-size: 1.5em;
+      margin: 0;
+      -webkit-border-radius:4px;
+      -moz-border-radius:4px;
+      border-radius:4px;
+      -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+      -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+      box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+      background: #f8f8f8;
+      color:#888;
+      border:none;
+      outline:none;
+      display: inline-block;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+      cursor:pointer;
+}
+
+#submit {
+  text-align: center;
+  padding:3px;
+  height: auto;
+  width: 300px;
+  font-size: 1.5em;
+  margin: 0;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+  background: #f8f8f8;
+  color:#888;
+  border:none;
+  outline:none;
+  display: inline-block;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+}
+
+.celeb {
+  width: 300px;
+  margin: 30px 20px;
+  text-shadow: none;
+  font-size: .7em;
+}
+
+.celebPhoto {
+  border-radius: 70px;
+  width: 250px;
+  height: 250px;
+}
+
+.celebsHolder {
+  max-width: 1080px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

@@ -1,6 +1,12 @@
-
-{{#each result}}
-  {{name}}
-  {{age}}
-  {{occupation}}
-{{/each}}
+<div class="celebsHolder">
+  {{#each result}}
+  <div class="celeb">
+  <img class="celebPhoto" src="{{photo_url}}" alt="No photo supplied"><br>
+    Name: {{name}} <br>
+    Age: {{age}} <br>
+    Occupation: {{occupation}}<br>
+    Birth Place: {{birth_place}}<br>
+    Starsign: {{birth_sign}} <br>
+  </div>
+  {{/each}}
+</div>
